@@ -8,13 +8,12 @@ MajnGhostMaps provides seamless integration between any MIDI controller and Able
 
 ## Features
 
-- **Device Control**: First 6 knobs mapped to control selected device parameters
-  - CC23: Device Parameter 1
-  - CC24: Device Parameter 2
-  - CC25: Device Parameter 3
-  - CC26: Device Parameter 4
-  - CC27: Device Parameter 5
-  - CC28: Device Parameter 6
+- **Device Control**: Split mapping to avoid overriding common device parameters
+  - Parameters 1-3: Controlled by CC105-107 (first 3 macros)
+  - Parameter 4: Intentionally skipped with dummy CC127
+  - Parameters 5-7: Controlled by CC102-104 (macros 5-7)
+  
+This split configuration prevents accidentally overriding the first parameters on devices when switching between them, while still providing control over 6 key parameters.
 
 ## Installation
 
@@ -37,7 +36,9 @@ The script uses MIDI channel 1 by default. To modify the configuration, edit `Us
 
 ## Default CC Mappings
 
-- **CC102-107**: Device parameters 1-6
+- **CC105-107**: Device parameters 1-3
+- **CC127**: Dummy mapping for parameter 4 (prevents accidental override)
+- **CC102-104**: Device parameters 5-7
 - **CC1-9**: Track volume faders 1-9
 
 ## Usage
