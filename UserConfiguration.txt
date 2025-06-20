@@ -112,12 +112,12 @@ Pad16Channel: -1
 # control.  If 9 or more Encoders are used, the bank
 # buttons will select two banks of 8 parameters for the
 # Encoders to control.
-Encoder1: 108
-Encoder2: 109
-Encoder3: 110
-Encoder4: 111
-Encoder5: 112
-Encoder6: 113
+Encoder1: 105
+Encoder2: 106
+Encoder3: 107
+Encoder4: 112
+Encoder5: 113
+Encoder6: 114
 Encoder7: -1
 Encoder8: -1
 Encoder9: -1

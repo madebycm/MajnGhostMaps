@@ -33,11 +33,12 @@ MajnGhostMaps provides seamless integration between any MIDI controller and Able
 The script uses MIDI channel 1 by default. To modify the configuration, edit `UserConfiguration.txt`:
 
 - `GlobalChannel`: MIDI channel (0-15, default: 0 = channel 1)
-- `Encoder1-6`: CC numbers for device control (default: 108-113)
+- `Encoder1-6`: CC numbers for device control (default: 105-107, 112-114)
 
 ## Default CC Mappings
 
-- **CC108-113**: Device parameters 1-6
+- **CC105-107**: Device parameters 1-3
+- **CC112-114**: Device parameters 4-6
 - **CC1-9**: Track volume faders 1-9
 
 ## Usage
